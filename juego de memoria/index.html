@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Trabajo Practico</title>
+</head>
+<body>
+    <h1>JUEGO DE MEMORIA</h1>
+    <div class="ajustes">
+        <h2>Ajustes del juego</h2>
+
+        <div>
+            <label>Cantidad de números:</label>
+            <input type="number" id="cantidad" value="4" min="1">
+        </div>
+
+        <div>
+            <label>Tiempo entre números:</label>
+            <input type="number" id="tiempo" value="1000" min="500">
+        </div>
+    </div>
+    
+    <button id="btnIniciar">Iniciar</button>
+    <p id="numero"></p>
+
+    <h2>Ingrese la respuesta:</h2>
+    <input type="number" id="respuesta" placeholder="Escribir">
+    <button id="btnConfirmar">Confirmar</button>
+    <p id="resultado"></p>
+
+</body>
+</html>
+<script src="js/funciones.js"></script>

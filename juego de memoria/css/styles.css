@@ -1,0 +1,109 @@
+body {
+    background-image: url('../fondo.jpg'); 
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;           
+    margin: 0;
+    font-family: 'Georgia', serif; 
+    color: #e0e0c0; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffd700; 
+    text-shadow: 2px 2px 6px #000; 
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.4); 
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:  #ffd900; 
+    text-shadow: 1px 1px 3px #000;
+}
+
+#numero {
+    font-size: 6em;
+    font-weight: bold;
+    color: #324d32;
+    margin: 20px 0;
+    text-shadow: 3px 3px 6px #000000;
+}
+
+.ajustes {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(34, 49, 34, 0.85); 
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid #556b2f;
+    font-size: 0.9em;
+    text-align: left;
+    box-shadow: 2px 2px 10px #000;
+}
+
+.ajustes label {
+    color: #e0e0c0;
+    display: inline-block;
+    width: 130px; 
+}
+
+.ajustes input {
+    width: 60px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #556b2f;
+    background-color: #3e5f3e; 
+    color: #fff;
+    font-size: 1em;
+}
+
+#respuesta {
+    width: 150px;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 2px solid #556b2fb6;
+    background-color: #253a25e3;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 2px solid #556b2f;
+    background-color: #2a3a2a;
+    color: #e0e0c0;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #000;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #4d5c34d7;
+    border-color: #2a3a2a;
+}
+
+#resultado {
+    font-size: 2em;           
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ffd900;           
+    text-shadow: 2px 2px 4px #000; 
+}
