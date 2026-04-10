@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f1a;
+    color: #e8eaed;
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 16px;
+}
+
+#header-container {
+    background: #16172a;
+    border: 1px solid #2a2d4a;
+    border-radius: 12px;
+    padding: 28px;
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #7c6af7;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #8a8faa;
+}
+
+select {
+    background: #0f0f1a;
+    border: 1px solid #2a2d4a;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #e8eaed;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #7c6af7;
+}
+
+#btnIniciar {
+    background: #7c6af7;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-start;
+}
+
+#btnIniciar:hover {
+    background: #9b8dff;
+}
+
+#mensajeGeneral, #mensajeRespuesta {
+    font-size: 0.88rem;
+    color: #ff6b6b;
+    min-height: 18px;
+}
+
+#mensajeRespuesta {
+    color: #8a8faa;
+}
+
+#contador {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.1rem;
+    color: #7c6af7;
+    min-height: 24px;
+}
+
+#textoPregunta {
+    font-size: 1.05rem;
+    font-weight: 500;
+    max-width: 620px;
+    text-align: center;
+    min-height: 28px;
+    line-height: 1.5;
+}
+
+#respuestas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    max-width: 620px;
+}
+
+#respuestas button {
+    background: #16172a;
+    border: 1px solid #2a2d4a;
+    border-radius: 8px;
+    padding: 14px 12px;
+    color: #e8eaed;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+#respuestas button:hover:not(:disabled) {
+    background: #1f2040;
+    border-color: #7c6af7;
+}
+
+#respuestas button:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+#puntajeCorrectas, #puntajeIncorrectas, #puntajeNoRespondidas {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.85rem;
+    color: #8a8faa;
+}
+
+#puntajeCorrectas   { color: #4fd98e; }
+#puntajeIncorrectas { color: #ff6b6b; }

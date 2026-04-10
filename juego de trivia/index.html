@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Trivia con API</title>
+</head>
+<body>
+    <div id="header-container">
+        <h1>TRIVIA PREGUNTAS Y RESPUESTAS</h1>
+        <label for="categoria">Elegí una categoria:</label>
+
+        <select id="categoria">
+            <option value="">Seleccionar</option>
+            <option value="historia">Historia</option>
+            <option value="ciencia">Ciencia</option>
+            <option value="deportes">Deportes</option>
+            <option value="geografía">Geografía</option>
+            <option value="tecnología">Tecnología</option>
+            <option value="matemática">Matemática</option>
+        </select>
+
+    <button id="btnIniciar">INICIAR</button>
+</div>
+
+<p id="mensajeGeneral"></p>
+<p id="contador"></p>
+<p id="textoPregunta"></p>
+
+<div id="respuestas">
+    <button id="op1"></button>
+    <button id="op2"></button>
+    <button id="op3"></button>
+    <button id="op4"></button>
+</div>
+
+<p id="mensajeRespuesta"></p>
+
+<p id="puntajeCorrectas">Correctas: 0</p>
+<p id="puntajeIncorrectas">Incorrectas: 0</p>
+<p id="puntajeNoRespondidas">No respondidas: 0</p>
+</body>
+</html>
+<script src="js/funciones.js"></script>
