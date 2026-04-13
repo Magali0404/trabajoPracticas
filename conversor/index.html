@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <p class="subtitle">Tipo de cambio ARG</p>
+        <h1>Conversor de pesos a <span>dólares</span></h1>
+
+        <div class="input-section">
+            <h2>Ingrese un monto en pesos</h2>
+            <div class="input-row">
+                <input type="number" id="monto" placeholder="Ej: 100000">
+                <button id="btnCalcular">Calcular</button>
+            </div>
+            <p id="resultado"></p>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de dólar</th>
+                    <th>Compra</th>
+                    <th>Venta</th>
+                    <th>USD comprando</th>
+                    <th>USD vendiendo</th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultado"></tbody>
+        </table>
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
