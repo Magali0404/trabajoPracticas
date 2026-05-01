@@ -1,0 +1,96 @@
+body {
+  min-height: 100vh;
+  background: #0f0f1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1.5rem 1rem;
+  font-family: system-ui, sans-serif;
+  gap: 10px;
+}
+
+/* Intentos y tiempo*/
+body > p {
+  color: #e2e0ff;
+  font-size: 1rem;
+  margin: 0;
+  padding: 6px 12px;
+  background: #1a1a2e;
+  border: 1px solid #2d2d4e;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+/* Título */
+h1 {
+  color: #e2e0ff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Tablero */
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(10, 60px);
+  gap: 6px;
+  background: #1a1a2e;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #2d2d4e;
+}
+
+/* Cartas */
+.carta {
+  width: 60px;
+  height: 60px;
+  background: #252540;
+  border: 1px solid #3a3a60;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  cursor: pointer;
+  color: transparent;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+  user-select: none;
+}
+
+.carta:not(:empty) {
+  color: white;
+  background: #2e2e52;
+  border-color: #5c5caa;
+}
+
+.carta:hover {
+  background: #323258;
+  border-color: #7070c4;
+  transform: scale(1.06);
+}
+
+/*Mensaje final*/
+h2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #1a1a2e;
+  border: 1px solid #2d2d4e;
+  border-radius: 14px;
+
+  padding: 20px 28px;
+  color: #a0f0c0;
+
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
